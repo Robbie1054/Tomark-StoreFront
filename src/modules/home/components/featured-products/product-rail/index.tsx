@@ -1,9 +1,10 @@
 import { listProducts } from "@lib/data/products"
 import { HttpTypes } from "@medusajs/types"
-import { Text } from "@medusajs/ui"
+import { Button, Text } from "@medusajs/ui"
 
 import InteractiveLink from "@modules/common/components/interactive-link"
 import ProductPreview from "@modules/products/components/product-preview"
+import Link from "next/link"
 
 export default async function ProductRail({
   collection,
@@ -42,6 +43,18 @@ export default async function ProductRail({
             </li>
           ))}
       </ul>
+      
+      {/* View More Button */}
+      <div className="flex justify-center mt-12">
+        <Link href={`/collections/${collection.handle}`} passHref>
+          <Button 
+            variant="primary" 
+            className="w-64 h-12 text-lg bg-slate-900"
+          >
+            View all Our Stock
+          </Button>
+        </Link>
+      </div>
     </div>
   )
 }

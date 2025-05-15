@@ -44,7 +44,7 @@ export default async function Nav() {
             <Suspense
               fallback={
                 <LocalizedClientLink
-                  className="hover:text-blue-100 text-white flex gap-2"
+                  className="text-white flex gap-2"
                   href="/cart"
                   data-testid="nav-cart-link"
                 >

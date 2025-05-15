@@ -18,7 +18,7 @@ export async function GET(req: NextRequest) {
           revalidatePath("/[countryCode]/(main)/collections/[handle]", "page")
           revalidatePath("/[countryCode]/(main)/", "page")
           revalidatePath("/[countryCode]/(main)/products/[handle]", "page")
-        // TODO add for other tags
+        
       }
     })
   )

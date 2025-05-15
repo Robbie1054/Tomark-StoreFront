@@ -66,7 +66,7 @@ export default async function Footer() {
                               children.map((child) => (
                                 <li key={child.id}>
                                   <LocalizedClientLink
-                                    className="hover:text-ui-fg-base"
+                                    className="hover:gray-400"
                                     href={`/categories/${child.handle}`}
                                     data-testid="category-link"
                                   >
